@@ -35,7 +35,8 @@
         self.bounces = NO;
         self.delegate = self;
         //关闭自动布局
-//        self.translatesAutoresizingMaskIntoConstraints = NO;
+        self.translatesAutoresizingMaskIntoConstraints = NO;
+
         //隐藏滚动条
         self.showsVerticalScrollIndicator = NO;
         self.showsHorizontalScrollIndicator = NO;
@@ -67,13 +68,12 @@
     UIImageView *imageView = (UIImageView *)[self viewWithTag:100];
     //设置刚开始的数据
     self.contentSize = CGSizeMake(self.imageArray.count * KSCREEN_WIDTH, imageView.height);
-   
-    NSLog(@"contentSize --- %@",NSStringFromCGSize(self.contentSize));
-    //设置高度约束
-    self.imageHeightConstraint = [self.heightAnchor constraintEqualToConstant:imageView.height];
-    //添加高度约束
-    [self addConstraint:self.imageHeightConstraint];
-    [self needsUpdateConstraints];
+
+    
+    //修改成图片的高度
+    CGRect frame = self.frame;
+    frame.size.height = imageView.height;
+    self.frame = frame;
     
 }
 
@@ -126,10 +126,12 @@
     nextImageView.frame = CGRectMake(KSCREEN_WIDTH*(page+1), 0, firstImageView.height * nextScale, firstImageView.height);
     //重新设置大小
     self.contentSize = CGSizeMake( KSCREEN_WIDTH * self.imageArray.count, firstImageView.height);
-    //重新设置约束
-    NSLog(@"imageHeiht %@",NSStringFromCGSize(firstImageView.frame.size));
     
-    [self.imageHeightConstraint setConstant:firstImageView.height];
+    //重新设置高度
+    CGRect frame = self.frame;
+    frame.size.height = firstImageView.height;
+    self.frame = frame;
+    
     
     int newpage = offsetX / KSCREEN_WIDTH;
     if ( offsetX - newpage * KSCREEN_WIDTH < 0.01) {
