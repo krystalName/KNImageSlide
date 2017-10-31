@@ -13,6 +13,14 @@
 		C2EC87411FA7081B0044A139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2EC87401FA7081B0044A139 /* Assets.xcassets */; };
 		C2EC87441FA7081B0044A139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EC87421FA7081B0044A139 /* LaunchScreen.storyboard */; };
 		C2EC87471FA7081B0044A139 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC87461FA7081B0044A139 /* main.m */; };
+		C2EC87541FA70AA30044A139 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2EC874F1FA70AA30044A139 /* 1.jpg */; };
+		C2EC87551FA70AA30044A139 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2EC87501FA70AA30044A139 /* 2.jpg */; };
+		C2EC87561FA70AA30044A139 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2EC87511FA70AA30044A139 /* 3.jpg */; };
+		C2EC87571FA70AA30044A139 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2EC87521FA70AA30044A139 /* 4.jpg */; };
+		C2EC87581FA70AA30044A139 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2EC87531FA70AA30044A139 /* 5.jpg */; };
+		C2EC875B1FA70AE80044A139 /* KNSlidingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC875A1FA70AE80044A139 /* KNSlidingView.m */; };
+		C2EC875E1FA70B940044A139 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC875D1FA70B940044A139 /* ImageModel.m */; };
+		C2EC87611FA70F3C0044A139 /* UIView+KNViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC87601FA70F3C0044A139 /* UIView+KNViewExtend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,17 @@
 		C2EC87431FA7081B0044A139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2EC87451FA7081B0044A139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2EC87461FA7081B0044A139 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2EC874F1FA70AA30044A139 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		C2EC87501FA70AA30044A139 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		C2EC87511FA70AA30044A139 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		C2EC87521FA70AA30044A139 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		C2EC87531FA70AA30044A139 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		C2EC87591FA70AE80044A139 /* KNSlidingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNSlidingView.h; sourceTree = "<group>"; };
+		C2EC875A1FA70AE80044A139 /* KNSlidingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNSlidingView.m; sourceTree = "<group>"; };
+		C2EC875C1FA70B940044A139 /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		C2EC875D1FA70B940044A139 /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		C2EC875F1FA70F3C0044A139 /* UIView+KNViewExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+KNViewExtend.h"; sourceTree = "<group>"; };
+		C2EC87601FA70F3C0044A139 /* UIView+KNViewExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KNViewExtend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,8 @@
 		C2EC87361FA7081B0044A139 /* KNImageSlide */ = {
 			isa = PBXGroup;
 			children = (
+				C2EC874E1FA70AA30044A139 /* Images */,
+				C2EC874D1FA70AA30044A139 /* ImageSlide */,
 				C2EC87371FA7081B0044A139 /* AppDelegate.h */,
 				C2EC87381FA7081B0044A139 /* AppDelegate.m */,
 				C2EC873A1FA7081B0044A139 /* ViewController.h */,
@@ -69,6 +90,31 @@
 				C2EC87461FA7081B0044A139 /* main.m */,
 			);
 			path = KNImageSlide;
+			sourceTree = "<group>";
+		};
+		C2EC874D1FA70AA30044A139 /* ImageSlide */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC87591FA70AE80044A139 /* KNSlidingView.h */,
+				C2EC875A1FA70AE80044A139 /* KNSlidingView.m */,
+				C2EC875C1FA70B940044A139 /* ImageModel.h */,
+				C2EC875D1FA70B940044A139 /* ImageModel.m */,
+				C2EC875F1FA70F3C0044A139 /* UIView+KNViewExtend.h */,
+				C2EC87601FA70F3C0044A139 /* UIView+KNViewExtend.m */,
+			);
+			path = ImageSlide;
+			sourceTree = "<group>";
+		};
+		C2EC874E1FA70AA30044A139 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC874F1FA70AA30044A139 /* 1.jpg */,
+				C2EC87501FA70AA30044A139 /* 2.jpg */,
+				C2EC87511FA70AA30044A139 /* 3.jpg */,
+				C2EC87521FA70AA30044A139 /* 4.jpg */,
+				C2EC87531FA70AA30044A139 /* 5.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2EC87441FA7081B0044A139 /* LaunchScreen.storyboard in Resources */,
+				C2EC87581FA70AA30044A139 /* 5.jpg in Resources */,
+				C2EC87571FA70AA30044A139 /* 4.jpg in Resources */,
+				C2EC87541FA70AA30044A139 /* 1.jpg in Resources */,
+				C2EC87551FA70AA30044A139 /* 2.jpg in Resources */,
+				C2EC87561FA70AA30044A139 /* 3.jpg in Resources */,
 				C2EC87411FA7081B0044A139 /* Assets.xcassets in Resources */,
 				C2EC873F1FA7081B0044A139 /* Main.storyboard in Resources */,
 			);
@@ -142,8 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2EC875E1FA70B940044A139 /* ImageModel.m in Sources */,
+				C2EC875B1FA70AE80044A139 /* KNSlidingView.m in Sources */,
 				C2EC873C1FA7081B0044A139 /* ViewController.m in Sources */,
 				C2EC87471FA7081B0044A139 /* main.m in Sources */,
+				C2EC87611FA70F3C0044A139 /* UIView+KNViewExtend.m in Sources */,
 				C2EC87391FA7081B0044A139 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
