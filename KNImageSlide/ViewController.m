@@ -51,6 +51,7 @@
     self.SlidingView = [[KNSlidingView alloc]initWithFrame:CGRectMake(0, 20, KSCREEN_WIDTH, 0)
                                           WithMutableArray:self.modeArray];
     
+    
     [self.view addSubview:self.SlidingView];
 
 

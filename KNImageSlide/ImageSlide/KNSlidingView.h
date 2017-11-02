@@ -13,6 +13,14 @@
 
 @interface KNSlidingView : UIScrollView
 
+
+/**
+ 初始化方法
+
+ @param frame frame
+ @param imageArray mode集合
+ @return 返回自己
+ */
 -(instancetype)initWithFrame:(CGRect)frame WithMutableArray:(NSMutableArray <ImageModel *> *)imageArray;
 
 
