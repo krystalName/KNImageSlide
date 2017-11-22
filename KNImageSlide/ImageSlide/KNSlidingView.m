@@ -36,7 +36,6 @@
         self.delegate = self;
         //关闭自动布局
         self.translatesAutoresizingMaskIntoConstraints = NO;
-
         //隐藏滚动条
         self.showsVerticalScrollIndicator = NO;
         self.showsHorizontalScrollIndicator = NO;
