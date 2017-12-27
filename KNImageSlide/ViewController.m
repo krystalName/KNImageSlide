@@ -35,7 +35,7 @@
     self.modeArray = [[NSMutableArray alloc]init];
     
     NSArray *imgaeNameArray = @[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg",@"5.jpg"];
-    NSArray *heightArray  = @[@"300",@"666",@"432",@"467",@"444"];
+    NSArray *heightArray  = @[@"300",@"666",@"233",@"300",@"444"];
     NSArray *widhtArray = @[@"555",@"666",@"444",@"423",@"375"];
     
     for (int i = 0; i<imgaeNameArray.count; i++ ) {
